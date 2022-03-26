@@ -1,0 +1,4 @@
+# IMAGEを取得
+FROM node:16-alpine
+# この直下で動かす
+WORKDIR /usr/src/app
