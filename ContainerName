@@ -1,0 +1,11 @@
+
+front
+docker exec -it 99d74bffcd55 sh -c "npm -v"
+
+
+backend
+docker exec -it e98387182afd sh -c "python3 manage.py createsuperuser"  
+docker exec -it e98387182afd sh -c "python3 manage.py django-cors-header"  
+
+package.jsonがあるディレクトリにてnpm install しないといけないみたい！
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install react-router-dom"
