@@ -5,7 +5,43 @@ docker exec -it 99d74bffcd55 sh -c "npm -v"
 
 backend
 docker exec -it e98387182afd sh -c "python3 manage.py createsuperuser"  
+docker exec -it e98387182afd sh -c "python3 manage.py makemigrations"  
 docker exec -it e98387182afd sh -c "python3 manage.py django-cors-header"  
+docker exec -it e98387182afd sh -c "pip3 show djangorestframework"  
+b33342a01913
 
 package.jsonがあるディレクトリにてnpm install しないといけないみたい！
 docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install react-router-dom"
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install @mui/material"
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install @material-ui/icons"
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install npm install @mui/icons-material"
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install react-loader-spinner"
+docker exec -it 99d74bffcd55 sh -c "cd django_front && npm install firebase"
+
+
+・わからないこと
+hook処理とレンダー処理が分けられない。。。
+結局いつも同じファイルに書いてしまう
+というのも変数を渡し合うのが難しい
+例えば、drinksのデータをuseStateで管理しつつ、
+axiosで撮ったくるようにしたとき、
+初期値の定義は
+
+
+・自動販売機の新規登録フォーム
+１、自販機の場所をマップからピンする
+２、自販機にある飲み物を登録
+・自動販売機の編集
+３、編集できるように
+・飲み物のリクエストフォーム（GoogleFormで作る）
+・ログインフォーム　Firebaseで完成させる（登録と更新はContextでログイン情報を参照した時に押せないようにすればいいと思われ、登録と更新にはログインが必要です）
+・ローディング画面５秒後にネットワークエラ〜かもーってのをメッセーzするそれでも解決しないならば管理者に連絡くださいとのことで
+・正しくない画面遷移に対してどうするか？
+
+
+●すでに上がってしまっている問題
+・自販機場所が無限に登録可能だと同じ場所に何個も登録されることになる
+→自販機自体は承認制にする
+・自販機だけはなんかスクレイピングでとれたりしないかな
+例えばGoogleマップに自販機が映っている箇所の座標だけ取ってきて登録しておくとか。。。
+

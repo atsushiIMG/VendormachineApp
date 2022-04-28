@@ -10,9 +10,9 @@ class Drinking(models.Model):
 
 class VendorInfo(models.Model):
     address = models.CharField(max_length=200)
-    longitude = models.DecimalField(max_digits=11, decimal_places=8)
-    latitude = models.DecimalField(max_digits=11, decimal_places=8)
-    created_at = models.DateField(auto_now_add=True)
+    longitude = models.DecimalField(max_digits=17, decimal_places=14)
+    latitude = models.DecimalField(max_digits=17, decimal_places=14)
+    created_at = models.DateField(auto_now=True)
     Drinkings = models.ManyToManyField(Drinking)
     
     def __str__(self):
