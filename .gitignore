@@ -1,0 +1,9 @@
+ContainerName
+.dbdate
+db.sqlite3
+node/django_front/node_modules/
+node/node_modules/
+docker-compose.yml
+Dockerfile
+Dockerfile_react
+requirements.txt
