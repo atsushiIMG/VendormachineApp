@@ -9,7 +9,8 @@ export const useFetchMapData = () => {
     
     // django_react/settings.pyにてCORS対策済み
     // ページ内に別URLの画面が生成されていることはいけない→CORS
-    const baseUrl = 'http://localhost:8000/api/vendors'
+    // const baseUrl = 'http://localhost:8000/api/vendors'
+    const baseUrl = 'http://0.0.0.0:8000/api/vendors'
 
     useEffect(() => {
         const fetchData = async() => {

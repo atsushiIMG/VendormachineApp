@@ -25,7 +25,7 @@ SECRET_KEY = '@59$80sdd!v&(8qw@^ppk709n!endz&x4=v^7e%-hj5u0^iey_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['whispering-scrubland-94919.herokuapp.com']
 
 
 # Application definition
